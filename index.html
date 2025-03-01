@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Vaddi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Container for stars -->
+    <div class="stars"></div>
+
+    <header>
+        <div class="container">
+            <h1>Rajesh Vaddi</h1>
+            <p>Aspiring Web Developer | AI & Data Science Enthusiast</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a final-year Computer Science Engineering student specializing in Artificial Intelligence and Data Science. Passionate about web development and problem-solving, I am eager to contribute to innovative projects.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, Java, C</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Core Technical:</strong> SQL, AI & ML</li>
+                <li><strong>Soft Skills:</strong> Communication, Time Management, Problem-Solving</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Recipe Book</h3>
+                <p>Developed a user-friendly recipe search application using HTML and CSS, providing procedures and ingredients.</p>
+            </div>
+            <div class="project">
+                <h3>Data Visualization</h3>
+                <p>Designed an interactive pie chart visualization tool that processes user inputs dynamically.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li>Microsoft AI Fundamentals - LinkedIn Learning</li>
+                <li>Python Basic Certification - Infosys Springboard</li>
+                <li>Python Basic Certification - Hackerrank</li>
+                <li>5-Star Python Rating - Hackerrank</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:rajeshnaidu18190@gmail.com">rajeshnaidu18190@gmail.com</a></p>
+            <p>Phone: +91 8309459357</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/vaddi-rajesh-a0842623b">My LinkedIn Profile</a></p>
+            <p>HackerRank: <a href="https://www.hackerrank.com/profile/rajeshnaidu18190">My HackerRank Profile</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rajesh Vaddi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Create random stars
+        const starContainer = document.querySelector('.stars');
+        const numStars = 100; // Number of stars to create
+
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            starContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
